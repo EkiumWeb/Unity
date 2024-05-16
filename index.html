@@ -88,5 +88,12 @@
       };
       document.body.appendChild(script);
     </script>
+	<button type="button" onclick="spawnUnityObject()">Press me</button>
+	<script>
+	function spawnUnityObject() {
+    // game object in the scene, method name, method parameter
+    SendMessage('MyGameObject', 'Spawn', 'Super string');
+}
+	</script>
   </body>
 </html>
