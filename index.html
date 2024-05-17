@@ -37,6 +37,12 @@
 	</style
   </head>
   <body class="dark">
+  	<button type="button" class="glass-button" onclick="ChangeToBlack()">Black</button>
+	<button type="button" class="glass-button" onclick="ChangeToGunMetal()">Gun Metal</button>
+	<button type="button" class="glass-button" onclick="ChangeToPurple()">Purple</button>
+	<button type="button" class="glass-button" onclick="ChangeToRed()">Red</button>
+	<button type="button" class="glass-button" onclick="ChangeToWhite()">White</button>
+	<button type="button" class="glass-button" onclick="ChangeToYellow()">Yellow</button>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
     </div>
@@ -143,11 +149,5 @@
     GameInstance.SendMessage('Button_Yellow', 'SetColor');
 	}
     </script>
-	<button type="button" class="glass-button" onclick="ChangeToBlack()">Black</button>
-	<button type="button" class="glass-button" onclick="ChangeToGunMetal()">Gun Metal</button>
-	<button type="button" class="glass-button" onclick="ChangeToPurple()">Purple</button>
-	<button type="button" class="glass-button" onclick="ChangeToRed()">Red</button>
-	<button type="button" class="glass-button" onclick="ChangeToWhite()">White</button>
-	<button type="button" class="glass-button" onclick="ChangeToYellow()">Yellow</button>
   </body>
 </html>
