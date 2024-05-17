@@ -87,14 +87,12 @@
         });
       };
       document.body.appendChild(script);
-    </script src="UnityLoaderFolder/UnityLoader.js">
+    </script>
 	<button type="button" onclick="spawnUnityObject()">Press me</button>
 	<script>
-	var myGame = UnityLoader.instantiate(gameContainer, "http://mydomain/myfolder/Build/mygame.json");
-	
 	function spawnUnityObject() {
     // game object in the scene, method name, method parameter
-    myGame.SendMessage('MyGameObject', 'Spawn', 'Super string');
+    SendMessage('MyGameObject', 'Spawn', 'Super string');
 }
 	</script>
   </body>
