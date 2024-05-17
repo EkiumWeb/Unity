@@ -88,6 +88,8 @@
       };
       document.body.appendChild(script);
 	  
+	var unityInstance = window.unityInstance = UnityLoader.instantiate("unityContainer", "https://ekiumweb.github.io/Unity/", {onProgress: UnityProgress});
+
 	function ChangeColor() {
     // game object in the scene, method name, method parameter
     window.unityInstance.SendMessage('Button_Red', 'SetColor', 'Super string');
