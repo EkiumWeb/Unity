@@ -87,13 +87,14 @@
         });
       };
       document.body.appendChild(script);
-    </script>
-	<button type="button" onclick="spawnUnityObject()">Press me</button>
-	<script>
-	function spawnUnityObject() {
+	  
+	function ChangeColor() {
     // game object in the scene, method name, method parameter
-    SendMessage('MyGameObject', 'Spawn', 'Super string');
-}
+    SendMessage('Button_Red', 'SetColor', 'Super string');
+	}
+    </script>
+	<button type="button" onclick="ChangeColor()">Press me</button>
+	<script>
 	</script>
   </body>
 </html>
