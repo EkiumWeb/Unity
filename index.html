@@ -90,13 +90,36 @@
       };
       document.body.appendChild(script);
 	  
-	function ChangeColor() {
+	function ChangeToBlack() {
+    // game object in the scene, method name, method parameter
+    GameInstance.SendMessage('Button_Black', 'SetColor');
+	}
+	function ChangeToGunMetal() {
+    // game object in the scene, method name, method parameter
+    GameInstance.SendMessage('Button_GunMetal', 'SetColor');
+	}
+	function ChangeToPurple() {
+    // game object in the scene, method name, method parameter
+    GameInstance.SendMessage('Button_Purple', 'SetColor');
+	}
+	function ChangeToRed() {
     // game object in the scene, method name, method parameter
     GameInstance.SendMessage('Button_Red', 'SetColor');
 	}
+	function ChangeToWhite() {
+    // game object in the scene, method name, method parameter
+    GameInstance.SendMessage('Button_White', 'SetColor');
+	}
+	function ChangeToYellow() {
+    // game object in the scene, method name, method parameter
+    GameInstance.SendMessage('Button_Yellow', 'SetColor');
+	}
     </script>
-	<button type="button" onclick="ChangeColor()">Press me</button>
-	<script>
-	</script>
+	<button type="button" onclick="ChangeToBlack()">Black</button>
+	<button type="button" onclick="ChangeToGunMetal()">Gun Metal</button>
+	<button type="button" onclick="ChangeToPurple()">Purple</button>
+	<button type="button" onclick="ChangeToRed()">Red</button>
+	<button type="button" onclick="ChangeToWhite()">White</button>
+	<button type="button" onclick="ChangeToYellow()">Yellow</button>
   </body>
 </html>
