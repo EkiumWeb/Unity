@@ -74,6 +74,7 @@
           progressBarFull.style.width = `${100 * progress}%`;
         }).then((unityInstance) => {
           loadingCover.style.display = "none";
+		  GameInstance = unityInstance;
           if (canFullscreen) {
             if (!hideFullScreenButton) {
               fullscreenButton.style.display = "";
@@ -88,7 +89,6 @@
       };
       document.body.appendChild(script);
 	  
-	var GameInstance = unityInstance;
 	function ChangeColor() {
     // game object in the scene, method name, method parameter
     unityInstance.SendMessage('Button_Red', 'SetColor', 'Super string');
