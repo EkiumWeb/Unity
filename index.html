@@ -151,17 +151,18 @@
 		
 var xmlDoc = document.implementation.createDocument(null, "variables");
 var xhttp = new XMLHttpRequest();
+		
 xhttp.onreadystatechange = function() {
 if (xhttp.readyState == 4 && xhttp.status == 200) {
-
-    var xmlDoc = xhttp.responseXML; //important to use responseXML here
+    var xmlDoc = xhttp.responseXML;
 }
+	
 xhttp.open("GET", "variables.xml", true);
 xhttp.send();
 
 var xmlString = "<root></root>";
 var parser = new DOMParser();
-var xmlDoc = parser.parseFromString(xmlString, "text/xml"); //important to use "text/xml"
+var xmlDoc = parser.parseFromString(xmlString, "text/xml");
 
     </script>
   </body>
