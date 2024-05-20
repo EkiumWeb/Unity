@@ -163,7 +163,7 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "variables.xml", true);
 xhttp.send();
 
-var xmlString = "<root></root>";
+var xmlString = "<root>test</root>";
 var parser = new DOMParser();
 var xmlDoc = parser.parseFromString(xmlString, "text/xml");
 
