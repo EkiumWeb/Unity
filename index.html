@@ -43,6 +43,7 @@
 	<button type="button" class="glass-button" onclick="ChangeToRed()">Red</button>
 	<button type="button" class="glass-button" onclick="ChangeToWhite()">White</button>
 	<button type="button" class="glass-button" onclick="ChangeToYellow()">Yellow</button>
+	<span id="colorspan">Color is default (white)</span>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
     </div>
@@ -127,26 +128,27 @@
 	function ChangeToBlack() {
     // game object in the scene, method name, method parameter
     GameInstance.SendMessage('Button_Black', 'SetColor');
+	document.getElementById("colorspan").textContent="Color is Black";
 	}
 	function ChangeToGunMetal() {
-    // game object in the scene, method name, method parameter
     GameInstance.SendMessage('Button_GunMetal', 'SetColor');
+	document.getElementById("colorspan").textContent="Color is Gun metal Grey";
 	}
 	function ChangeToPurple() {
-    // game object in the scene, method name, method parameter
     GameInstance.SendMessage('Button_Purple', 'SetColor');
+	document.getElementById("colorspan").textContent="Color is Purple";
 	}
 	function ChangeToRed() {
-    // game object in the scene, method name, method parameter
     GameInstance.SendMessage('Button_Red', 'SetColor');
+	document.getElementById("colorspan").textContent="Color is Red";
 	}
 	function ChangeToWhite() {
-    // game object in the scene, method name, method parameter
     GameInstance.SendMessage('Button_White', 'SetColor');
+	document.getElementById("colorspan").textContent="Color is White";
 	}
 	function ChangeToYellow() {
-    // game object in the scene, method name, method parameter
     GameInstance.SendMessage('Button_Yellow', 'SetColor');
+	document.getElementById("colorspan").textContent="Color is Yellow";
 	}
 		
 var xmlDoc = document.implementation.createDocument(null, "variables");
