@@ -18,6 +18,11 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.arialtext {
+  font-family: Arial;
+  padding: 10px;
+}
+
 .neum-button {
   background-color: #007bff;
   border: none;
@@ -43,7 +48,7 @@
 	<button type="button" class="glass-button" onclick="ChangeToRed()">Red</button>
 	<button type="button" class="glass-button" onclick="ChangeToWhite()">White</button>
 	<button type="button" class="glass-button" onclick="ChangeToYellow()">Yellow</button>
-	<span id="colorspan">Color is default (white)</span>
+	<span id="colorspan" class="arialtext">Color is default (white)</span>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
     </div>
