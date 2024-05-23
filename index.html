@@ -8,50 +8,58 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
 	<style>
-.glass-button {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
-.arialtext {
-  font-family: Arial;
-  padding: 10px;
-}
-
-.neum-button {
-  background-color: #007bff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transform: translateY(2px);
-  transition: transform 0.2s ease-in-out;
-}
-
-.neum-button:hover {
-  transform: translateY(4px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
 	</style
   </head>
   <body class="dark">
-  	<button type="button" class="glass-button" onclick="ChangeToBlack()">Black</button>
-	<button type="button" class="glass-button" onclick="ChangeToGunMetal()">Gun Metal</button>
-	<button type="button" class="glass-button" onclick="ChangeToPurple()">Purple</button>
-	<button type="button" class="glass-button" onclick="ChangeToRed()">Red</button>
-	<button type="button" class="glass-button" onclick="ChangeToWhite()">White</button>
-	<button type="button" class="glass-button" onclick="ChangeToYellow()">Yellow</button>
-	<span id="colorspan" class="arialtext">Color is default (white)</span>
+	
+	<div id="page-container">
+	<div style="display: table-row">
+	
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
     </div>
+	
+	<div id="button-container">
+	
+		<div class="title" id="colorspan">Select Color</div>
+		<div id="buttons">
+			<button type="button" class="button-60" onclick="ChangeToBlack()">Black</button>
+			<button type="button" class="button-60" onclick="ChangeToGunMetal()">Gun Metal</button>
+			<button type="button" class="button-60" onclick="ChangeToPurple()">Purple</button>
+			<button type="button" class="button-60" onclick="ChangeToRed()">Red</button>
+			<button type="button" class="button-60" onclick="ChangeToWhite()">White</button>
+			<button type="button" class="button-60" onclick="ChangeToYellow()">Yellow</button>
+		</div>
+		
+		<div class="title" id="bonnetspan">Bonnet</div>
+		<div id="buttons">
+		<button type="button" class="button-60" onclick="">Standard</button>
+		<button type="button" class="button-60" onclick="">Vented</button>
+		</div>
+		
+		<div class="title" id="bodyspan">Body Kit</div>
+		<div id="buttons">
+		<button type="button" class="button-60" onclick="">Standard</button>
+		<button type="button" class="button-60" onclick="">Wide</button>
+		</div>
+		
+		<div class="title" id="wingspan">Rear Wing</div>
+		<div id="buttons">
+		<button type="button" class="button-60" onclick="">Standard</button>
+		<button type="button" class="button-60" onclick="">Hill Climb</button>
+		</div>
+		
+		<div class="title" id="splitterspan">Front Splitter</div>
+		<div id="buttons">
+		<button type="button" class="button-60" onclick="">Short</button>
+		<button type="button" class="button-60" onclick="">Extended</button>
+		</div>
+			
+	</div>
+	
+	</div>
+	</div>
     <div id="loading-cover" style="display:none;">
       <div id="unity-loading-bar">
         <div id="unity-logo"><img src="logo.png"></div>

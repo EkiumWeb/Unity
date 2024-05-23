@@ -8,18 +8,14 @@ html, body {
     height: 100%;
 }
 canvas {
-    display: block;
+    /* display: inline; */
 }
 body {
     margin: 0;
 }
-#unity-container {
-    width: 100%;
-    height: 100%;
-}
 #unity-canvas {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 1000px;
     background: #231F20;
 }
 #loading-cover {
@@ -102,4 +98,168 @@ body {
   }
 }
 
+#page-container {
+	background-color: white;
+	width: 100%;
+	display: table;
+}
 
+#unity-container {
+	background-color: red;
+    width: 80%;
+	height: 100%;
+	display: table-cell;
+}
+
+#button-container {
+	width: 600px;
+	height: 500px;
+	display: table-cell;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 20px;
+	overflow-y: scroll; 
+}
+
+.title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 24px;
+	font-family: arial;
+}
+
+/* CSS */
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 5px;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
+.button-60 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.button-60:focus {
+  color: #171e29;
+}
+
+.button-60:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-60:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-60 {
+    min-width: 170px;
+  }
+}
+
+/*
+.glass-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.arialtext {
+  font-family: Arial;
+  padding: 10px;
+}
+
+.neum-button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.neum-button:hover {
+  transform: translateY(4px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+*/
