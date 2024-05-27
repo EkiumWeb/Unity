@@ -63,3 +63,7 @@
 	ToggleKit = false;
     GameInstance.SendMessage('BodyToggle', 'KitOff');
 	}
+	
+	GameInstance.SendMessage("MyMethod", "Hello from JavaScript!", function(result) {
+    console.log("Received result from Unity:", result);
+});

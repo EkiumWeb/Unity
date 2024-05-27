@@ -217,3 +217,46 @@ body {
     min-width: 170px;
   }
 }
+
+.color-button {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background: linear-gradient(##6bff63, #3abd33);
+	border-style: solid;
+	border-width: 3px;
+	border-spacing: 3px;
+	border-color: #fff;
+	padding: 15px;
+	margin-bottom: 10px;
+	position: center;
+}
+
+.color-button.red {
+	background: linear-gradient(#f50000, #ad0000);
+}
+.color-button.gunmetal {
+	background: linear-gradient(#969696, #5c5c5c);
+}
+.color-button.purple {
+	background: linear-gradient(#9700c9, #7c00a6);
+}
+.color-button.white {
+	background: linear-gradient(#f2f2f2, #bfbfbf);
+}
+.color-button.yellow {
+	background: linear-gradient(#f2e200, #e3cc00);
+}
+.color-button.black {
+	background: linear-gradient(#454545, #2e2e2e);
+}
+
+.color-button:hover {
+	border-color: #000000;
+	border-width: 3px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
