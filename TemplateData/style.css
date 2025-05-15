@@ -20,14 +20,18 @@ a {
   color: #272727;
 }
 
+.returnImg {
+  width: 185px;
+}
+
 #return-home {
   font-family: Arial;
   position: absolute;
   background-color: #ffffff;
   margin-left: 7px;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 94%;
+  top: 93%;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 #loading-cover {
