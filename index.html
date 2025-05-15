@@ -14,57 +14,56 @@
   <body class="dark">
 	
 	<div id="page-container">
-	
-			<div id="unity-container" class="unity-desktop">
-				<canvas id="unity-canvas"></canvas>
-			</div>
-	
-			<div id="button-container">
-	
-				<div class="title" id="colorspan">Select Color</div>
-				<div id="buttons">
-				<div class="button-container">
-					<button type="button" class="color-button black" onclick="ChangeToBlack()"></button>
-					<button type="button" class="color-button gunmetal" onclick="ChangeToGunMetal()"></button>
-					<button type="button" class="color-button purple" onclick="ChangeToPurple()"></button>
-					<button type="button" class="color-button red" onclick="ChangeToRed()"></button>
-					<button type="button" class="color-button white" onclick="ChangeToWhite()"></button>
-					<button type="button" class="color-button yellow" onclick="ChangeToYellow()"></button>
-				</div>
-				</div>
+
+      <div id="return-home">
+        <p><a href="https://www.ekium.com.au/webgl">Return to Ekium.com.au</a></p>  
+      </div>
+
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas"></canvas>
+    </div>
+
+    <div id="button-container">
+      <div class="title" id="colorspan">Select Color</div>
+      <div id="buttons">
+        <div class="button-container">
+          <button type="button" class="color-button black" onclick="ChangeToBlack()"></button>
+          <button type="button" class="color-button gunmetal" onclick="ChangeToGunMetal()"></button>
+          <button type="button" class="color-button purple" onclick="ChangeToPurple()"></button>
+          <button type="button" class="color-button red" onclick="ChangeToRed()"></button>
+          <button type="button" class="color-button white" onclick="ChangeToWhite()"></button>
+          <button type="button" class="color-button yellow" onclick="ChangeToYellow()"></button>
+        </div>
+      </div>
 		
-				<div class="title" id="bonnetspan">Bonnet</div>
-				<div id="buttons">
-					<button type="button" class="button-main" onclick="VentedBonnetOff()">Standard</button>
-					<button type="button" class="button-main" onclick="VentedBonnetOn()">Vented</button>
-				</div>
-		
-				<div class="title" id="bodyspan">Body Kit</div>
-				<div id="buttons">
-					<button type="button" class="button-main" onclick="KitOn()">Standard</button>
-					<button type="button" class="button-main" onclick="KitOff()">Wide</button>
-					<button type="button" class="button-disabled" onclick="">Vented</button>
-					<button type="button" class="button-disabled" onclick="">All Fins</button>
-				</div>
-		
-				<div class="title" id="wingspan">Rear Wing</div>
-				<div id="buttons">
-					<button type="button" class="button-main" onclick="HillClimbWingOff()">Standard</button>
-					<button type="button" class="button-main" onclick="HillClimbWingOn()">Hill Climb</button>
-					<button type="button" class="button-disabled" onclick="">Sport</button>
-				</div>
-		
-				<div class="title" id="splitterspan">Front Splitter</div>
-				<div id="buttons">
-					<button type="button" class="button-main" onclick="SplitterOff()">Short</button>
-					<button type="button" class="button-main" onclick="SplitterOn()">Extended</button>
-				</div>
-				
-				
-			
-			</div>
-	</div>
-		
+      <div class="title" id="bonnetspan">Bonnet</div>
+      <div id="buttons">
+        <button type="button" class="button-main" onclick="VentedBonnetOff()">Standard</button>
+        <button type="button" class="button-main" onclick="VentedBonnetOn()">Vented</button>
+      </div>
+
+      <div class="title" id="bodyspan">Body Kit</div>
+      <div id="buttons">
+        <button type="button" class="button-main" onclick="KitOn()">Standard</button>
+        <button type="button" class="button-main" onclick="KitOff()">Wide</button>
+        <button type="button" class="button-disabled" onclick="">Vented</button>
+        <button type="button" class="button-disabled" onclick="">All Fins</button>
+      </div>
+
+      <div class="title" id="wingspan">Rear Wing</div>
+      <div id="buttons">
+        <button type="button" class="button-main" onclick="HillClimbWingOff()">Standard</button>
+        <button type="button" class="button-main" onclick="HillClimbWingOn()">Hill Climb</button>
+        <button type="button" class="button-disabled" onclick="">Sport</button>
+      </div>
+
+      <div class="title" id="splitterspan">Front Splitter</div>
+      <div id="buttons">
+        <button type="button" class="button-main" onclick="SplitterOff()">Short</button>
+        <button type="button" class="button-main" onclick="SplitterOn()">Extended</button>
+      </div>
+	  </div>
+
 		<div id="loading-cover" style="display:none;">
 			<div id="unity-loading-bar">
 				<div id="unity-logo"><img src="logo.png"></div>
